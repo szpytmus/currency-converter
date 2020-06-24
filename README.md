@@ -1,4 +1,5 @@
 #Currency-Converter
 
 ##Demo
-[link](https://szpytmus.github.io/currency-converter/)
+
+[Kalkulator walut](https://szpytmus.github.io/currency-converter/)
