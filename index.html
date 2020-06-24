@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/table.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/button.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"> </script>
+
+</head>
+
+<body class="body">
+
+    <header class="header">Kalkulator walut</header>
+
+    <div class="body__container">
+        <main>
+
+
+
+            <div class="button">
+                <div class="button__vertical">
+                    <button class="button__vertical--1">Wyświetl aktualne kursy walut</button>
+                </div>
+            </div>
+
+            <table class="table table__hidden" id="currencyTable">
+                <caption class="table__caption">Aktualizacja kursów dnia 16.06.2020 17:30</caption>
+                <tr class="table__row">
+                    <th class="table__cell table__cellHeader">Waluta</th>
+                    <th class="table__cell table__cellHeader">Kupno</th>
+                    <th class="table__cell table__cellHeader">Sprzedaż</th>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cellHeader">USD</th>
+                    <td class="table__cell">3.8940</td>
+                    <td class="table__cell">3.9726</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cellHeader">EUR</th>
+                    <td class="table__cell">4.3914</td>
+                    <td class="table__cell">4.4802</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cellHeader">GBP</th>
+                    <td class="table__cell">4.8946</td>
+                    <td class="table__cell">4,9934</td>
+                </tr>
+            </table>
+
+            <div class="fieldset">
+                <form class="form">
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">Przelicz walutę 😎</legend>
+                        <P class="form__paragraph">
+                            <label>
+                                <span class="form__labelName">Przelicz z:</span>
+                                <select name="calculateFrom" class="form__select js-currency-1" value="PLN">
+                                    <option value="GBP">GBP</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="PLN">PLN</option>
+                                    <option value="USD">USD</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p class="form__paragraph">
+                            <label>
+                                <span class="form__labelName">Przelicz na:</span>
+                                <select name="calculateTo" class="form__select js-currency-2" value="GBP">
+                                    <option value="GBP">GBP</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="PLN">PLN</option>
+                                    <option value="USD">USD</option>
+                                </select>
+                            </label>
+                        </p>
+                        <label>
+                            <span class="form__labelName">Wprowadź kwotę*:</span>
+                            <input min="1" class="form__value js-quantity" name="valueToConvert" type="number"
+                                step="any" required>
+                            <p class="form__paragraph">
+                                <span class="form__labelName">Wynik:</span>
+                                <input min="1" class="form__input js-result" type="number" readonly>
+                            </p>
+                        </label>
+                        <p class="form__paragraph--smaller">Pola oznaczone * są wymagane do uzupełnienia.</p>
+                    </fieldset>
+                    <div class="button">
+                        <div class="button__vertical">
+                            <button class="button__form js-submit">Przelicz</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </main>
+
+
+
+    </div>
+
+    <footer class="footer">
+        Kalkulator w ramach kursu YouCode - Frontend Developer od podstaw wykonał Marcin Szpytma. Dopiero się uczę 😁.
+    </footer>
+</body>
+
+</html>
