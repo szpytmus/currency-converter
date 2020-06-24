@@ -15,7 +15,7 @@
 .table__cell {
     border: 2px solid;
     text-align: center;
-    padding: 20px;
+    padding: 20px;  
 }
 
 .table__cellHeader{
@@ -28,14 +28,19 @@
     background-color: rgb(42, 114, 42);
 }
 
+.table__row{
+    background-color:rgb(223, 219, 219);
+}
+
 .table__row:nth-child(even){
     background-color: rgb(197, 196, 196);
 }
 
 .table__row:hover{
-    background-color: rgb(165, 164, 164);
+    background-color: rgb(134, 134, 134);
 }
 
 .table__caption{
     font-size: 10px;
+    background-color:rgb(197, 196, 196);
 }
