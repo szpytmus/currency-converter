@@ -26,9 +26,9 @@ formElement.addEventListener("submit", (event) => {
     const poundBuy = 4.8946;
     const poundSell = 4.9934;
 
-    let quantity = quantityElement.value;
-    let currency1 = currencyElement1.value;
-    let currency2 = currencyElement2.value;
+    var quantity = quantityElement.value;
+    var currency1 = currencyElement1.value;
+    var currency2 = currencyElement2.value;
     
 
     switch (currency1) {
