@@ -2,7 +2,7 @@
 
 ![Currency converter](./images/currency-converter.png)
 
-<font size="+1">Simple currency converter allowing user to change between GBP, EUR, USD and PLN currencies. Simple looks and easy interface makes it quick to learn and operate. Try and enjoy!</font>
+Simple currency converter allowing user to change between GBP, EUR, USD and PLN currencies. Simple looks and easy interface makes it quick to learn and operate. Try and enjoy!
 
 ## Demo
 
