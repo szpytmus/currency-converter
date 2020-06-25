@@ -1,8 +1,28 @@
 
+
+const toggleTableText = () =>{ 
+    var button = document.querySelector(".button__vertical--1");
+
+    if (button.innerText === "Wyświetl aktualne kursy walut") {
+        button.innerText = "Schowaj tabelę";
+       
+    }
+
+    else if (button.innerText === "Schowaj tabelę") {
+        button.innerText = "Wyświetl aktualne kursy walut";
+    }
+};
+
+
 const showTable = () => {
     var tableElement = document.getElementById("currencyTable");
     tableElement.classList.toggle("table__hidden");
 };
+
+const tableFunctions = () => {
+    toggleTableText();
+    showTable();
+}
 
 {
     const currencyElement1 = document.querySelector(".js-currency-1");
