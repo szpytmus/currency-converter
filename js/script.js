@@ -9,15 +9,14 @@ let formElement = document.querySelector(".form");
 
 
 
-function showTable(){
+let showTable = () => {
     var tableElement = document.getElementById("currencyTable");
     tableElement.classList.toggle("table__hidden");
 }
 
 
+const calculateCurrency = () => {
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
 
     const euroBuy = 4.3914;
     const euroSell = 4.4802;
@@ -112,8 +111,15 @@ formElement.addEventListener("submit", (event) => {
                     break;
             }
     }
-});
+};
 
 
 
+const onSubmitForm = () => {
 
+    event.preventDefault();
+    calculateCurrency();
+}
+
+
+formElement.addEventListener("submit", onSubmitForm)
