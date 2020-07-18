@@ -15,12 +15,14 @@ html{
 
 .body__background{
     background-image: url("../images/currency-background.jpg");
-    background-size: auto;
+    background-size: cover;
     background-attachment: scroll;
+    background-position:center;
+    background-repeat: no-repeat;
 }
 
 .body__container{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0px auto;
     overflow-x: auto;
 }

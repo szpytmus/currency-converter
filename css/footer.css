@@ -1,4 +1,7 @@
 .footer{
+    position:absolute;
+    bottom: 0;
+    height:50px;
     background-color: hsl(0, 0%, 70%);
     color: white;
     font-weight: bold;
